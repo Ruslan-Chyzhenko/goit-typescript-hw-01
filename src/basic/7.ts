@@ -1,5 +1,3 @@
-// Створіть новий тип даних, який підходить для цих двох об'єктів.
-
 type dataPage = {
   title: string;
   likes: number;
