@@ -5,10 +5,9 @@ type AllType = {
   weight: number;
 };
 
-function compare<T extends Partial<AllType>>(
-  top: T,
-  bottom: T
-): Pick<AllType, "name" | "position" | "color" | "weight"> {
+function compare<
+  T extends Pick<AllType, "name" | "position" | "color" | "weight">
+>(top: T, bottom: T): AllType {
   return {
     name: top.name || "",
     color: top.color || "",
